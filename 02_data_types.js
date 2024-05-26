@@ -9,30 +9,64 @@
 // symbol
 // number
 
-console.log(typeof "devesh");
-console.log(typeof null);
+// console.log(typeof "devesh");
+// console.log(typeof null);
 
-const bignum = 123456788765432124567n
-console.log(typeof bignum);
-
-
-
-//  non primitive datatypes --> 3 types 
-
-//  array
-//  object
-//  functions
+// const bignum = 123456788765432124567n
+// console.log(typeof bignum);
 
 
 
-const hero = [ "batman", "ironman", "thor"]
-let myobj = {
-    name: "devesh",
-    age: 20,
-    enrolledin : "software engineer"
+// //  non primitive datatypes --> 3 types 
+
+// //  array
+// //  object
+// //  functions
+
+
+
+// const hero = [ "batman", "ironman", "thor"]
+// let myobj = {
+//     name: "devesh",
+//     age: 20,
+//     enrolledin : "software engineer"
+// }
+
+
+// const myfunction = function(){
+//     console.log("hello world");
+// }
+
+
+
+
+//  ``````````````````````````````````   memory in javascript ````````````````````````````````````
+
+// Stacks --> all primitive data types  use stack memory
+//  Heap memory --> all non primitive data types
+
+
+// stacks example
+
+let name = "devesh"
+let anothername  = name;
+anothername = "ram"
+
+console.log(anothername);
+console.log(name);
+
+
+
+
+//  heaps example
+
+let obj = {
+    email: "djaudfewiu@gmail",
+    age: 20
 }
 
 
-const myfunction = function(){
-    console.log("hello world");
-}
+let user = obj;
+user.email = "devesh@gmail.com"
+console.log(obj.email);
+console.log(user.email);
