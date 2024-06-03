@@ -24,6 +24,7 @@ const myobj = {
 
 
 
+
 // changing and freezing the value
 
 // myobj.email = "ramsingh@gmail.com"
