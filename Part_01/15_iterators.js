@@ -50,26 +50,46 @@
     
 // }
 
-let index = 0
+// let index = 0
 
-while (index <= 12) {
-    console.log(`the index is ${index}`);
-    index = index +2
+// while (index <= 12) {
+//     console.log(`the index is ${index}`);
+//     index = index +2
 
     
+// }
+
+
+// let myarr = ["spiderman", "superman", "thor"]
+// let arr = 0
+// while(arr <myarr.length){
+//     console.log(`the heros are ${myarr[arr]}`);
+//     arr += 1
+// }
+
+
+// let score = 1
+// do{
+//     console.log(`the score is ${score}`);
+//     score++
+// }while(score <= 10)
+
+
+//  for of loop -->
+
+const myarr = [1,2,3,4,5]
+
+for(const num of myarr){
+    console.log(num);
 }
 
 
-let myarr = ["spiderman", "superman", "thor"]
-let arr = 0
-while(arr <myarr.length){
-    console.log(`the heros are ${myarr[arr]}`);
-    arr += 1
+const greetings = "hello world !"
+for(const great of greetings){
+    if(great == " "){
+        continue
+    }
+    console.log("each character is = "+great);
 }
 
 
-let score = 1
-do{
-    console.log(`the score is ${score}`);
-    score++
-}while(score <= 10)
