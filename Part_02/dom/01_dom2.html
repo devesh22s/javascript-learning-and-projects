@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgba(0, 0, 0, 0.714);">
+    <ul class="language"> 
+        <li>javascript</li>
+    </ul>
+</body>
+
+<script>
+    function addlanguage(langName) {
+        const li = document.createElement('li')
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
+
+        
+    }
+
+    addlanguage("python")
+
+
+    // optimazation method
+
+    function addoptilanguage(langName){
+        const li = document.createElement('li')
+        const addtext = document.createTextNode(langName)
+        li.appendChild(addtext)
+        document.querySelector('.language').appendChild(li)
+
+    }
+    addoptilanguage('golang')    
+    
+
+    //  append child is best as compare to innerhtml
+
+// ----------------------------------------------------------------------------------------------
+
+    //  how to edit a value
+
+    const selectsecond = document.querySelector("li:nth-child(2)")
+    // selectsecond.innerHTML = 'kldfn'
+    const newli = document.createElement('li')
+    // newli.textContent = "ruby"
+    // or
+    newli.appendChild(document.createTextNode('pyt'))
+    selectsecond.replaceWith(newli)
+
+
+    // innertText and textContent are both very similar to createTextNode . The first two are properties on an existing element representing the text -- not HTML -- inside the element. The value of them varies slightly (one is aware of styling and will not give hidden text)
+
+
+
+    // edit -->
+
+    const firstlang = document.querySelector("li:first-child")
+    firstlang.outerHTML = '<li>rush</li>'
+    
+
+
+    // remove -->
+
+    const lastlang = document.querySelector("li:last-child")
+    lastlang.remove()
+
+    
+</script>
+</html>
+

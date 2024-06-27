@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgba(0, 0, 0, 0.601);">
+    
+</body>
+<script>
+
+    const div = document.createElement("h1")
+    console.log(div);
+    div.className = "main"
+    div.id = Math.round(Math.random() *10 +1)
+    div.setAttribute("title", "generated title")
+    // div.innerHTML = "generated div"
+    const addtext = document.createTextNode("generated code")
+    div.appendChild(addtext)
+    div.style.backgroundColor = 'green'
+    document.body.appendChild(div)
+</script>
+</html>
