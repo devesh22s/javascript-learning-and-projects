@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hii this is devesh</h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+    
+</body>
+<script>
+
+    const saydate = function(str){
+        console.log(str, Date.now());
+
+    }
+    document.querySelector('#start').addEventListener('click', function(){
+        const interval_id = setInterval(saydate, 1000, "hello")
+    })
+    document.querySelector('#stop').addEventListener('click', function (){
+        clearInterval (interval_id)
+        console.log("stop");
+    })
+</script>
+</html>
